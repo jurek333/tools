@@ -39,7 +39,7 @@ def populate_python():
 		cid = "py%s-%s" % (ver, bits)
 		cname = "Python %s (%s bits)" % (ver, bits)
 
-		COMPILERS.append((cid, cname, "set PATH=%s;%%PATH%%" % (path)))    
+		COMPILERS.append((cid, cname, "set PATH=%s;%s\\Scripts;%%PATH%%" % (path, path)))    
 
 def populate_clang():
 	path = "C:\\Program Files\\LLVM" 
